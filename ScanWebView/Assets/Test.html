@@ -1,0 +1,56 @@
+﻿<html>
+<head>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+
+        function SetMultiBarcode(numBarcode) {
+            var qty = numBarcode;
+            document.getElementById("textbox").focus();
+            location.href = "xerum:multibarcode?num=" + qty;
+        };
+
+
+    </script>
+    <!--<script type="text/javascript">
+        function SetData() {
+            var text = document.getElementById("textbox");
+            document.myform.action = "https://www.google.it/search?q=" + text.innerText;
+            myform.submit();
+        };
+    </script>-->
+</head>
+<body>
+    <div data-role="page" data-theme="b">
+        <form name="myform" method="GET" onsubmit="SetData()">
+
+            <div data-role="content">
+                <textarea id="textbox" name="text" cols="40" rows="5"></textarea>
+                <!--<input type="text" id="textbox" name="textbox" />-->
+                <div>
+                    <select id="multibarcode" name="multibarcode" onchange="SetMultiBarcode(this.value)" style="width:100%">
+                        <option value="0" selected>-- N. Barcode --</option>
+                        <option value="1">1 Barcode</option>
+                        <option value="2">2 Barcode</option>
+                        <option value="3">3 Barcode</option>
+                        <option value="4">4 Barcode</option>
+                        <option value="5">5 Barcode</option>
+                        <option value="6">6 Barcode</option>
+                        <option value="7">7 Barcode</option>
+                        <option value="8">8 Barcode</option>
+                        <option value="9">9 Barcode</option>
+                        <option value="10">10 Barcode</option>
+                    </select>
+                </div>
+
+
+            </div>
+            <a href="PaginaBarCode.htm">click me</a>
+        </form>
+    </div>
+</body>
+</html>	

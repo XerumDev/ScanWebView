@@ -1,0 +1,133 @@
+<!--
+ This page was created by the
+ SAP Integrated ITS, WebAS: DEV, workprocess: 5
+ All rights reserved.
+ Creation time:  Wed Feb 28 16:15:54 2018
+ Charset:        utf-8
+ Template:       zmmrf_new/99/zmm_sapcons_menu_100.html  -->
+
+
+
+
+<html class="MobileHtml">
+
+
+
+<head>
+
+
+    <!--
+       SAMPLE for device specific include files
+       ----------------------------------------
+       This file should contain device specific META HTTP-Equiv tags to
+       set fontsize, key mappings, battery display etc. for the device
+       specific browsers.
+       For samples of device specific include files see sample service
+       itsmobile01 / theme 99 within the WebAs.
+       ( transaction se80, Web/Internet service / itsmobile01 / theme 99 )
+       To include one of this sample device files simply set
+       ~ITSMOBILEDEVICEINCLUDE	<include name>
+       e.g. ~ITSMOBILEDEVICEINCLUDE DEVINCLUDE_SYMBOL3090
+       within the service settings.
+    -->
+
+    <title>Lettura Barcode</title>
+
+
+    <link rel="stylesheet" href="/sap/public/bc/its/mimes/zmmrf_new/99/ZMOBILE.css" type="text/css" />
+
+    <script type="text/javascript" language="javascript" src="/sap/public/bc/its/mimes/itsmobile/99/scripts/all/mobile.js"></script>
+
+    <script type="text/javascript" language="Javascript">
+        var itsmobile_eos = "/sap(cz1TSUQlM2FBTk9OJTNhbHhjaXRkZXYwMV9ERVZfMDAlM2FUX0NhVExEZnh3ZTc2MmI2TnBPZlF0cF9MdFNiYTA3N09hM2FRUzh4LUFUVA==)/bc/gui/sap/its/test/zmmrf_new/~flNUQVRFPTE3Nzk4NzQ2OTcuMDAzLjAyLjAyAA==?~okcode=%2fnex";
+    </script>
+
+
+
+</head>
+<body class="MobileBody " id="MobileBody" onload="setFocus('GV_LIFNR[1]');" onkeydown="return processKeyEvent(event);" onhelp="return false;">
+    <form method="post" action="/sap(cz1TSUQlM2FBTk9OJTNhbHhjaXRkZXYwMV9ERVZfMDAlM2FUX0NhVExEZnh3ZTc2MmI2TnBPZlF0cF9MdFNiYTA3N09hM2FRUzh4LUFUVA==)/bc/gui/sap/its/test/zmmrf_new/~flNUQVRFPTE3Nzk4NzQ2OTcuMDAzLjAyLjAyAA==" id="mobileform" name="mobileform" onsubmit="return firstSend()" style="display:inline">
+        <input type="hidden" id="~OkCode" name="~OkCode" value="/0" />
+        <input type="hidden" id="~FKey" name="~FKey" value="" />
+        <input type="hidden" id="~Focusfield" name="~Focusfield" value="" />
+        <input type="hidden" name="~SEC_SESSTOKEN" value="6E3249A85CE04A03" />
+
+        <!-- main screen begin -->
+        <div width="100%">
+            <!-- start include cuaarea.html -->
+            <table class="MobileCuaArea">
+                <tr>
+                    <!-- First line title and default buttons -->
+                    <td valign="middle" align="left">
+                        <span class="MobileWindowTitle">Lettura Barcode</span>
+                    </td>
+                    <td valign="middle" align="right" width="80px">
+                        <!-- enter button -->
+                        <input type="image" class="MobileHeaderLogo" alt="" src="/sap/public/bc/its/mimes/itsmobile/99/images/all/enter.gif" />
+                        <!-- logoff button -->
+                        <a href="/sap(cz1TSUQlM2FBTk9OJTNhbHhjaXRkZXYwMV9ERVZfMDAlM2FUX0NhVExEZnh3ZTc2MmI2TnBPZlF0cF9MdFNiYTA3N09hM2FRUzh4LUFUVA==)/bc/gui/sap/its/test/zmmrf_new/~flNUQVRFPTE3Nzk4NzQ2OTcuMDAzLjAyLjAyAA==?~okcode=%2fnex&amp;~SEC_SESSTOKEN=6E3249A85CE04A03"><img src="/sap/public/bc/its/mimes/itsmobile/99/images/all/logoff.gif" alt="" class="MobileHeaderLogo" /></a>
+                        <!-- SAP logo -->
+                        <img src="/sap/public/bc/its/mimes/itsmobile/99/images/all/saplogo.gif" alt="ITSmobile 1.1" class="MobileHeaderLogo" />
+                    </td>
+                </tr>
+            </table>
+
+
+
+
+            <!-- end include cuaarea.html -->
+
+        </div>
+        <div width="100%" class="MobileUserArea">
+            <!-- line 1 -->
+            <div class="MobileRow">
+                <input type="button" style="width:5.740em" class="MobileButton " name="bt_back[1]" value="F3" onclick="setOkCode('=BACK');" /><input type="button" style="width:5.740em" class="MobileButton " name="bt_refresh[1]" value="F2" onclick="setOkCode('=REFRESH');" /><input type="button" style="width:5.740em" class="MobileButton " name="bt_check[1]" value="F5" onclick="setOkCode('=CHECK');" />
+            </div>
+            <!-- line 2 -->
+            <div class="MobileRow">
+                <input type="button" style="width:5.740em" class="MobileButton " name="bt_manuale[1]" value="F7" onclick="setOkCode('=MANUAL');" /><span style="margin-left:10.660em; height:1px"></span>
+            </div>
+            <!-- line 3 -->
+            <div class="MobileRow">
+                <span style="width:8.200em" class="MobileLabelHighlighted ">FORNITORE</span><span style="margin-left:0.820em; height:1px"></span><span style="width:8.200em" class="MobileLabelHighlighted ">N.BARCODE</span>
+            </div>
+            <!-- line 4 -->
+            <div class="MobileRow">
+                <input type="text" style="width:9.020em" class="MobileEdit "
+                       onfocus="setFocusField('gv_lifnr[1]');" onblur="leaveFocusField('gv_lifnr[1]');"
+                       name="gv_lifnr[1]" value="" size="10" maxlength="10" />
+                <span style="margin-left:2.460em; height:1px"></span>
+                <select style="width:5.740em" class="MobileListbox "
+                        onchange="javascript:location.href = 'xerum:multibarcode?num=' + this.value;"
+                        name="gv_numero_barcode[1]" onfocus="setFocusField('gv_numero_barcode[1]');"
+                        onblur="leaveFocusField('gv_numero_barcode[1]');">
+                    <option value="" selected="selected"></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <!-- line 5 -->
+            <div class="MobileRow">
+                <span style="width:17.220em" class="MobileLabel MobileOutputOnly "></span>
+            </div>
+            <!-- line 6 -->
+            <div class="MobileRow">
+                <span style="width:11.480em" class="MobileLabelHighlighted ">BARCODE&nbsp;INPUT</span><span style="margin-left:4.920em; height:1px"></span>
+            </div>
+            <!-- line 7 -->
+            <div class="MobileRow">
+                <input type="text" style="width:17.220em" class="MobileEdit " onfocus="setFocusField('gv_barcode[1]');" onblur="leaveFocusField('gv_barcode[1]');"
+                       name="gv_barcode[1]" value="" size="20" maxlength="32717" />
+            </div>
+            <!-- line 8 -->
+            <div class="MobileRow">
+                <span style="margin-left:3.280em; height:1px"></span><input type="button" style="width:10.660em" class="MobileButton " name="bt_save[1]" value="F8&nbsp;SALVA" onclick="setOkCode('=SAVE');" /><span style="margin-left:2.460em; height:1px"></span>
+            </div>
+        </div>
+        <!-- main screen end -->
+    </form>
+</body>
+</html>
